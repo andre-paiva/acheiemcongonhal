@@ -106,6 +106,7 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
     if (quinzeDoSabado)  idaPousoAlegre.innerHTML = '17:20'// segunda a sabado
     if (dezesseisDoSabado)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
     if (dezesseteDoSabado)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
+    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação'
 
 } else if(diaDaSemana == 'domingo'){
     let umDomingo =     horario < '06:00'
@@ -126,6 +127,7 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
     if (seisDomingo)  idaPousoAlegre.innerHTML = '16:30'// segunda a domingo
     if (seteDomingo)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
     if (oitoDomingo)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
+    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação'
 } else{
     idaPousoAlegre.innerHTML = 'Indisponível'
 }
@@ -184,6 +186,7 @@ function idaParaCongonhal(){
         if (vinteDoDiaPA)  idaCongonhal.innerHTML = '18:15'// segunda a sabado
         if (vinteUmDoDiaPA)  idaCongonhal.innerHTML = '19:15'// segunda a domingo
         if (vinteDoisDoDiaPA)  idaCongonhal.innerHTML = '21:30'//segunda a domingo
+        if (horario > '20:00') idaCongonhal.innerHTML = '<small>Fim de circulação'
     
     } else if(diaDaSemana == 'sábado'){
     
@@ -222,6 +225,7 @@ function idaParaCongonhal(){
         if (quinzeDoSabadoPA)  idaCongonhal.innerHTML = '18:15'// segunda a sabadoPA
         if (dezesseisDoSabadoPA)  idaCongonhal.innerHTML = '19:15'// segunda a domingo
         if (dezesseteDoSabadoPA)  idaCongonhal.innerHTML = '21:30'//segunda a domingo
+        if (horario > '20:00') idaCongonhal.innerHTML = '<small>Fim de circulação'
     
     } else if(diaDaSemana == 'domingo'){
         let umDomingoPA =     horario < '07:15'
@@ -242,6 +246,7 @@ function idaParaCongonhal(){
         if (seisDomingoPA)  idaCongonhal.innerHTML = '17:30'// segunda a domingoPA
         if (seteDomingoPA)  idaCongonhal.innerHTML = '19:15'// segunda a domingoPA
         if (oitoDomingoPA)  idaCongonhal.innerHTML = '21:30'//segunda a domingo
+        if (horario > '20:00') idaCongonhal.innerHTML = '<small>Fim de circulação'
     } else{
         idaCongonhal.innerHTML = 'Indisponível'
     }
