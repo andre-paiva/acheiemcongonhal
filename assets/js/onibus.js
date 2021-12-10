@@ -1,7 +1,7 @@
  //Atualiza a página de 1 em 1 minuto
-//  setTimeout(function() {
-//      window.location.reload(1);
-//    }, 6000);
+ setTimeout(function() {
+     window.location.reload(1);
+   }, 60000);
 
 let idaPousoAlegre = document.getElementById('idaPousoAlegre')
 let idaCongonhal = document.getElementById('idaCongonhal')

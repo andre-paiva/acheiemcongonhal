@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+    <title>Achei em Congonhal!</title>
+   
+  </head>
+  <body>
+    
+
+    <header>
+      <nav class="navbar p-0 navbar-dark bg-success mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/"><b>achei em congonhal</b></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse m-4">
+              <hr>
+              <div class="d-flex flex-column flex-wrap justify-content-center"> <!-- linha 1 -->
+                <a class="btn btn-warning text-white" href="guia.html">Guia da Cidade</a>
+                <a class="btn btn-info  my-1 text-white" href="telefones-uteis.html">Telefones Úteis</a>
+                <a class="btn btn-secondary text-white" href="horario-onibus.html">Horário de Ônibus</a>
+                <a class="btn btn-light my-1 text-success" href="drogaria-plantao.html">Drogaria de Plantão</a>
+                <a class="btn btn-danger text-white" href="telefone-policia.html">Telefone da Polícia</a>
+              </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="d-flex flex-wrap justify-content-center mt-2">
+        <div class="bg-img">
+            <section class="mt-2" >
+        
+                <div class="d-flex flex-column justify-content-center align-self-center text-center">
+                    <div>
+                        <img style="width: 100px;" class="img-fluid" src="assets/images/guia-saude.svg" alt="">
+                        <h1 class="p-0 m-0 txt-congonhal display-1">Saúde</h1>
+                    </div>
+                        <p  id="restaurantes" class="mb-3">Cuide-se!</p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <nav class="sticky-top bg-light p-2 ">
+            <div class="menu-gastronomia m-2">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a class="btn btn-info btn-sm " href="#medicos">Médicos</a>
+                    <a class="btn btn-info btn-sm " href="#dentistas">Dentistas</a>
+                    <a class="btn btn-info btn-sm " href="#nutricionistas">Nutricionistas</a>
+                    <a class="btn btn-info btn-sm " href="#laboratorios">Laboratórios</a>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-between m-2">
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="guia.html" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Voltar ao guia</h6>
+                        </a>
+                </div>
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="index.html" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Página inicial</h6>
+                        </a>
+                </div>
+            </div>
+        </nav>
+      
+      <section class="container"> <!-- SECAO DE MEDICOS -->
+          <div class="text-center">
+                  <h3 class="mx-3 mt-2">Laboratórios</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                <a href="saude/lab-methodos.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p> Méthodos</p>
+                    </a>
+                    
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="saude/lab-labmatos.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Labmatos</p>
+                </a>
+                
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="saude/lab-labvida.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Lab Vida</p>
+                </a>
+                
+
+            </li>
+
+            
+          </ul>
+      </section>
+      
+      <section class="container" > <!-- SECAO DE SORVETERIAS -->
+          <div class="text-center">
+              <h3 class="mx-3 mt-3">
+                  Odontologia
+              </h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="saude/nucleo-orofacial.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Núcleo Orofacial</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="saude/dra-lara-junqueira.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Dra Lara Junqueira</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li id="confeitarias" class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="saude/drs-hellen-felipe.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Dra Ellen Joyce Vilela e Dr Felipe Sana da Cunha</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="saude/dr-celio-sousa.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Dr Célio S Sousa</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="saude/drs-mariacarolina-renan.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Dra Maria Carolina e Dr Renan</p>
+                </a>
+                                    
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="saude/dra-andressa-ansorge.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Dra Andressa Ansorge</p>
+                </a>
+                                    
+
+            </li>
+          
+
+          </ul>
+      </section>
+
+      <section class="container"> <!-- SECAO DE CONFEITARIAS -->
+          <div class="text-center">
+              <h3 class="mx-3 mt-3">Nutricionistas</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="saude/nutri-silmara-morais.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Silmara Morais</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="saude/nutri-silvana-silva.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Silvana Silva</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="saude/nutri-ana-lima.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Ana Lima</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="saude/nutri-elaine-melo.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Elaine Melo</p>
+                </a>
+                                    
+
+            </li>
+          
+            
+          
+          </ul>
+      </section>
+
+        <section class="container"> <!-- SECAO DE LANCHONETES -->
+          <div class="text-center">
+              <h3 class="mx-3 mt-3">Médicos</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- LANCHONETES -->
+                    <a href="saude/nucleo-orofacial.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>xxxxxxxxxxxxx</p>
+                    </a>
+                                        
+
+                </li>
+
+                                    
+          </ul>
+      </section>
+
+      
+
+    </main>
+
+    <footer class="text-center align-center m-2">
+      <h6 class="lh-lg" style="font-size: .8rem; text-shadow: -2px 2px 3px rgba(0,0,0,0.25);">Coded by Andre Paiva</h6>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+        <!-- Optional JavaScript -->
+    <!-- <script src="js/script.js"></script> -->
+
+  </body>
+</html>
