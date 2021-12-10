@@ -67,7 +67,7 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
     if (vinteDoDia)  idaPousoAlegre.innerHTML = '17:20'// segunda a sabado
     if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
     if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
-    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small></small>'//segunda a domingo
+    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small>'//segunda a domingo
 
 } else if(diaDaSemana == 'sábado'){
 
