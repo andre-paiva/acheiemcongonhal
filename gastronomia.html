@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+    <title>Achei em Congonhal!</title>
+   
+  </head>
+  <body>
+    
+
+    <header>
+      <nav class="navbar p-0 navbar-dark bg-success mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/"><b>achei em congonhal</b></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse m-4">
+              <hr>
+              <div class="d-flex flex-column flex-wrap justify-content-center"> <!-- linha 1 -->
+                <a class="btn btn-warning text-white" href="guia.html">Guia da Cidade</a>
+                <a class="btn btn-info  my-1 text-white" href="telefones-uteis.html">Telefones Úteis</a>
+                <a class="btn btn-secondary text-white" href="horario-onibus.html">Horário de Ônibus</a>
+                <a class="btn btn-light my-1 text-success" href="drogaria-plantao.html">Drogaria de Plantão</a>
+                <a class="btn btn-danger text-white" href="telefone-policia.html">Telefone da Polícia</a>
+              </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="d-flex flex-wrap justify-content-center mt-2">
+        <div class="bg-img">
+            <section class="mt-2" >
+        
+                <div class="d-flex flex-column justify-content-center align-self-center text-center">
+                    <div>
+                        <img style="width: 100px;" class="img-fluid" src="assets/images/guia-food.svg" alt="">
+                        <h1 class="p-0 m-0 txt-congonhal display-1">Gastronomia</h1>
+                    </div>
+                        <p  id="restaurantes" class="mb-3">Guia Gastronômico do Cidade!</p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <nav class="sticky-top bg-light p-2 ">
+            <div class="menu-gastronomia m-2">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a class="btn btn-warning btn-sm " href="#restaurantes">Restaurantes</a>
+                    <a class="btn btn-warning btn-sm " href="#sorveterias">Sorveterias</a>
+                    <a class="btn btn-warning btn-sm " href="#confeitarias">Confeitarias</a>
+                    <a class="btn btn-warning btn-sm " href="#lanchonete">Lanchonetes</a>
+                    <a class="btn btn-warning btn-sm " href="#pizzarias">Pizzarias</a>
+                    <a class="btn btn-warning btn-sm " href="#marmitarias">Marmitarias</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between m-2">
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="guia.html" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Voltar ao guia</h6>
+                        </a>
+                </div>
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="index.html" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Página inicial</h6>
+                        </a>
+                </div>
+            </div>
+        </nav>
+      
+      <section class="container"> <!-- SECAO DE RESTAURANTES -->
+          <div class="text-center">
+                  <h3 class="mx-3 mt-2">Restaurantes</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                    <a href="gastronomia/emporio-junqueira.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Empório Junqueira</p>
+                    </a>
+                    
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="./gastronomia/barraca-rubens.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Barraca do Rubens</p>
+                </a>
+                
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="./gastronomia/restaurante-bolinha.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Restaurante do Bolinha</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="./gastronomia/restaurante459.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Restaurante 459 Mãe e Filho</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="./gastronomia/restaurante-santogole.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Rest. e Chopp. Santo Gole</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/restaurante-tuller.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Tuller's Congonhal</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/restaurante-isidorio.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Restaurante do Isidório</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/Pesqueiro-vicente.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pesqueiro do Vicente</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/Pesqueiro-cantinhodopeixe.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pesqueiro Cantinho do Peixe</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/pesqueiro-canaa.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pesqueiro Canaã</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/pesqueiro-amigos.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pesqueiro dos Amigos</p>
+                </a>
+                
+
+            </li>
+
+            <li id="sorveterias" class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/pesqueiro-ranchoalegre.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pesq. Rancho Alegre - Léo</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/pesqueiro-pacoquinha.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pesqueiro Paçoquinha</p>
+                </a>
+                
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- RESTAURANTE -->
+                <a href="gastronomia/pesqueiro-pedaserra.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pesqueiro Pé da Serra</p>
+                </a>
+                
+
+            </li>
+
+
+          </ul>
+      </section>
+      
+      <section class="container" > <!-- SECAO DE SORVETERIAS -->
+          <div class="text-center">
+              <h3 class="mx-3 mt-3">Sorveterias</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="gastronomia/sorveteria-lolla.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Lolla Sorvetes</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="gastronomia/sorveteria-levandone.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Le Vandone</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li id="confeitarias" class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="gastronomia/sorveteria-maria.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Sorveteria Maria</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="gastronomia/restaurante-legranno.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Le Granno</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- SORVETERIAS -->
+                <a href="gastronomia/sorveteria-coleguinhas.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Açaí das Coleguinhas</p>
+                </a>
+                                    
+
+            </li>
+          
+
+          </ul>
+      </section>
+
+      <section class="container"> <!-- SECAO DE CONFEITARIAS -->
+          <div class="text-center">
+              <h3 class="mx-3 mt-3">Bolos, doces e salgados</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="gastronomia/confeitaria-midedoceria.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Mi'Dê doceria</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="gastronomia/confeitaria-sonhedoce.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Sonhe Doce</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="gastronomia/confeitaria-cakeslima.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Cake's Lima</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="gastronomia/confeitaria-dicacau.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Di Cacau</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li  id="lanchonete" class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="gastronomia/confeitaria-ceilabolos.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Ceila Bolos</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="gastronomia/confeitaria-araujogourmet.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Araújo Gourmet</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- CONFEITARIAS -->
+                <a href="gastronomia/confeitaria-salgadosvida.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Salgados Vida</p>
+                </a>
+                                    
+
+            </li>
+          
+          </ul>
+      </section>
+
+        <section class="container"> <!-- SECAO DE LANCHONETES -->
+          <div class="text-center">
+              <h3 class="mx-3 mt-3">Lanches, salgados e pastéis</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- LANCHONETES -->
+                    <a href="gastronomia/restaurante-legranno.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Le Granno</p>
+                    </a>
+                                        
+
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- LANCHONETES -->
+                    <a href="gastronomia/pastelaria-sinhaninha.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Pastelaria Sinhaninha</p>
+                    </a>
+                                        
+
+                </li>
+            
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- LANCHONETES -->
+                    <a href="gastronomia/pastelaria-zegalinha.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Pastelaria do Zé Galinha</p>
+                    </a>
+                                        
+
+                </li>
+            
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- LANCHONETES -->
+                    <a href="gastronomia/pastelaria-praca.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Pastelaria da Praça</p>
+                    </a>
+                                        
+
+                </li>
+            
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- LANCHONETES -->
+                    <a href="gastronomia/pastelaria-luciano.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Pastelaria do Luciano</p>
+                    </a>
+                                        
+
+                </li>
+          
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- HAMBURGUERIAS -->
+                    <a href="gastronomia/hamburgueria-garagemburguer.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Garagem Burguer</p>
+                    </a>
+                                        
+
+                </li>
+            
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- HAMBURGUERIAS -->
+                    <a href="gastronomia/hamburgueria-centrallanches.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Central Lanches</p>
+                    </a>
+                                        
+
+                </li>
+            
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- HAMBURGUERIAS -->
+                    <a href="gastronomia/hamburgueria-smashburguer.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Smash Burguer</p>
+                    </a>
+                                        
+
+                </li>
+                      
+                <li  id="pizzarias" class="list-group-item d-flex justify-content-between align-items-center"> <!-- HAMBURGUERIAS -->
+                    <a href="gastronomia/padaria-gepaes.html" class="d-flex text-decoration-none text-black stretched-link">
+                        <p>Gê Pães</p>
+                    </a>
+                                        
+
+                </li>
+            
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- HAMBURGUERIAS -->
+                    <a href="gastronomia/hamburgueria-lanchesecia.html" class="d-flex text-decoration-none text-black stretched-link">
+                        Lanches e Cia
+                    </a>
+                                        
+
+                </li>
+            
+                <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- HAMBURGUERIAS -->
+                    <a href="gastronomia/hamburgueria-tabernalanches.html" class="d-flex text-decoration-none text-black stretched-link">
+                        Taberna Lanches
+                    </a>
+                                        
+
+                </li>
+                    
+          </ul>
+      </section>
+
+      <section class="container"> <!-- SECAO DE PIZZARIAS -->
+          <div class="text-center">
+              <h3 class="mx-2 mt-3">Pizzas e esfihas</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZAS -->
+                <a href="gastronomia/pizzaria-jk.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pizzaria JK</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZAS -->
+                <a href="gastronomia/pizzaria-viana.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Esfiharia Vi'Ana</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZAS -->
+                <a href="gastronomia/pizzaria-ranchospizzaria.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Ranchos Pizzaria</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZAS -->
+                <a href="gastronomia/pizzaria-juninho.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pizzaria do Juninho</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZAS -->
+                <a href="gastronomia/sorveteria-lolla.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Lolla sorvetes (esfihas)</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li  id="marmitarias" class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZAS -->
+                <a href="gastronomia/pastelaria-mariahelena.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Pastelaria Maria Helena</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZARIAS -->
+                <a href="gastronomia/padaria-congonhal.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Padaria Congonhal</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- PIZZARIAS -->
+                <a href="gastronomia/restaurante-legranno.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Le Granno</p>
+                </a>
+                                    
+
+            </li>
+                    
+          </ul>
+      </section>
+
+      <section class="container"> <!-- SECAO DE MARMITARIAS -->
+          <div class="text-center">
+              <h3 class="mx-2 mt-3">Marmitarias</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- MARMITARIAS -->
+                <a href="gastronomia/restaurante-isidorio.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Restaurante do Isidório</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- MARMITARIAS -->
+                <a href="gastronomia/restaurante-bolinha.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Restaurante do Bolinha</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- MARMITARIAS -->
+                <a href="gastronomia/restaurante459.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Restaurante 459 Mãe e Filho</p>
+                </a>
+                                    
+
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- MARMITARIAS -->
+                <a href="gastronomia/marmitaria-tofit.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p>Tô fit</p>
+                </a>
+                                    
+
+            </li>
+                    
+          </ul>
+      </section>
+
+    </main>
+
+    <footer class="text-center align-center m-2">
+      <h6 class="lh-lg" style="font-size: .8rem; text-shadow: -2px 2px 3px rgba(0,0,0,0.25);">Coded by Andre Paiva</h6>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+        <!-- Optional JavaScript -->
+    <!-- <script src="js/script.js"></script> -->
+
+  </body>
+</html>
