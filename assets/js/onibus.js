@@ -22,7 +22,7 @@ function idaParaPousoAlegre(){
 
 if(diaDaSemana == 'seguna-feira' || diaDaSemana == 'terça-feira' || diaDaSemana == 'quarta-feira' || diaDaSemana == 'quinta-feira' || diaDaSemana == 'sexta-feira'){
 
-let umDoDia           = horario < '04:40'   &&  horario > '20:00' 
+let umDoDia           = horario < '04:40'
 let doisDoDia         = horario < '05:50'   &&  horario > '04:40'  
 let tresDoDia         = horario < '06:00'    &&  horario > '05:50' 
 let quatroDoDia       = horario < '06:30'   &&  horario > '06:00'  
@@ -67,10 +67,11 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
     if (vinteDoDia)  idaPousoAlegre.innerHTML = '17:20'// segunda a sabado
     if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
     if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
+    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação'//segunda a domingo
 
 } else if(diaDaSemana == 'sábado'){
 
-    let umDoSabado      =  horario < '04:40'   &&  horario > '20:00'
+    let umDoSabado      =  horario < '04:40'
     let doisDoSabado    =  horario < '06:00'   &&  horario > '04:40'
     let tresDoSabado    =  horario < '06:30'   &&  horario > '06:00'
     let quatroDoSabado    =  horario < '07:15'   &&  horario > '06:30'
@@ -107,7 +108,7 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
     if (dezesseteDoSabado)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
 
 } else if(diaDaSemana == 'domingo'){
-    let umDomingo =     horario < '06:00'   &&  horario > '20:00'
+    let umDomingo =     horario < '06:00'
     let doisDomingo =   horario < '08:00'   &&  horario > '06:00'
     let tresDomingo =   horario < '09:30'   &&  horario > '08:00'
     let quatroDomingo = horario < '13:00'   &&  horario > '09:30'
@@ -138,7 +139,7 @@ function idaParaCongonhal(){
 
     if(diaDaSemana == 'seguna-feira' || diaDaSemana == 'terça-feira' || diaDaSemana == 'quarta-feira' || diaDaSemana == 'quinta-feira' || diaDaSemana == 'sexta-feira'){
     
-    let umDoDiaPA           = horario < '05:15'   &&  horario > '21:30' 
+    let umDoDiaPA           = horario < '05:15'
     let doisDoDiaPA         = horario < '06:30'   &&  horario > '05:15'  
     let tresDoDiaPA         = horario < '06:40'    &&  horario > '06:30' 
     let quatroDoDiaPA       = horario < '07:15'   &&  horario > '06:40'  
@@ -186,7 +187,7 @@ function idaParaCongonhal(){
     
     } else if(diaDaSemana == 'sábado'){
     
-        let umDoSabadoPA      =  horario < '05:15'   &&  horario > '21:30' 
+        let umDoSabadoPA      =  horario < '05:15'
         let doisDoSabadoPA    =  horario < '06:40'   &&  horario > '05:15'
         let tresDoSabadoPA    =  horario < '07:15'   &&  horario > '06:40'
         let quatroDoSabadoPA    =  horario < '08:00'   &&  horario > '07:15'
@@ -223,7 +224,7 @@ function idaParaCongonhal(){
         if (dezesseteDoSabadoPA)  idaCongonhal.innerHTML = '21:30'//segunda a domingo
     
     } else if(diaDaSemana == 'domingo'){
-        let umDomingoPA =     horario < '07:15'   &&  horario > '21:30'
+        let umDomingoPA =     horario < '07:15'
         let doisDomingoPA =   horario < '08:50'   &&  horario > '07:15'
         let tresDomingoPA =   horario < '11:15'   &&  horario > '08:00'
         let quatroDomingoPA = horario < '14:00'   &&  horario > '11:15'
