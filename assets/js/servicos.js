@@ -1,4 +1,3 @@
-function carregar(){
 window.addEventListener("scroll", function() {showFunction()});
 
 function showFunction() {
@@ -8,5 +7,6 @@ function showFunction() {
         document.getElementById("link-topo").style.display = "none";
     }
 }
-}
+
+
 
