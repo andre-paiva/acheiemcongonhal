@@ -3,8 +3,9 @@
      window.location.reload(1);
    }, 60000);
 
-let idaPousoAlegre = document.getElementById('idaPousoAlegre')
-let idaCongonhal = document.getElementById('idaCongonhal')
+
+let idaCongonhal = document.getElementById('idaCongonhal');
+let idaPousoAlegre = document.getElementById('idaPousoAlegre');
 
 const option = { weekday: 'long'}
 const locale = 'pt-br'
@@ -44,6 +45,8 @@ let dezenoveDoDia     =  horario < '17:00'   &&  horario > '16:30'
 let vinteDoDia        =  horario < '17:20'  &&  horario > '17:00'  
 let vinteUmDoDia      =  horario < '18:15'  &&  horario > '17:20' 
 let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
+
+
 
     if (umDoDia)  idaPousoAlegre.innerHTML = '04:40' //segunda a sabado
     if (doisDoDia)  idaPousoAlegre.innerHTML = '05:50'// segunda a sexta
@@ -136,9 +139,6 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
 
 
 
-
-
-
     if(diaDaSemana == 'seguna-feira' || diaDaSemana == 'terça-feira' || diaDaSemana == 'quarta-feira' || diaDaSemana == 'quinta-feira' || diaDaSemana == 'sexta-feira'){
     
     let umDoDiaPA           = horario < '05:15'
@@ -163,6 +163,8 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
     let vinteDoDiaPA        =  horario < '18:15'  &&  horario > '18:00'  
     let vinteUmDoDiaPA      =  horario < '19:15'  &&  horario > '18:15' 
     let vinteDoisDoDiaPA    =  horario < '21:30'   &&  horario > '19:15'
+
+  
     
         if (umDoDiaPA)  idaCongonhal.innerHTML = '05:15' //segunda a sabado
         if (doisDoDiaPA)  idaCongonhal.innerHTML = '06:30' // segunda a sexta
