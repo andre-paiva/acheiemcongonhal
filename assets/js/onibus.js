@@ -1,4 +1,7 @@
- //Atualiza a página de 1 em 1 minuto
+
+
+
+//Atualiza a página de 1 em 1 minuto
  setTimeout(function() {
      window.location.reload(1);
    }, 60000);
@@ -18,7 +21,7 @@ let horario = `${horas}:${minutos}`
 // //LOGICA DE HORARIOS SEGUNDA A DOMINGO
 
 
-function idaParaPousoAlegre(){
+
 
 if(diaDaSemana == 'seguna-feira' || diaDaSemana == 'terça-feira' || diaDaSemana == 'quarta-feira' || diaDaSemana == 'quinta-feira' || diaDaSemana == 'sexta-feira'){
 
@@ -131,13 +134,13 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15'
 } else{
     idaPousoAlegre.innerHTML = 'Indisponível'
 }
-}
-idaParaPousoAlegre()
 
 
 
 
-function idaParaCongonhal(){
+
+
+
 
     if(diaDaSemana == 'seguna-feira' || diaDaSemana == 'terça-feira' || diaDaSemana == 'quarta-feira' || diaDaSemana == 'quinta-feira' || diaDaSemana == 'sexta-feira'){
     
@@ -250,8 +253,8 @@ function idaParaCongonhal(){
     } else{
         idaCongonhal.innerHTML = 'Indisponível'
     }
-}
-idaParaCongonhal()
+
+
 
 
 // //HORARIO DE SEGUNDA A SEXTA
@@ -341,4 +344,6 @@ idaParaCongonhal()
 // idaPousoAlegre.innerHTML = diaDaSemana
 
 
-carregaOnibus()
+
+
+

@@ -1,5 +1,4 @@
 function carregar(){
-    alert('carreguei')
 window.addEventListener("scroll", function() {showFunction()});
 
 function showFunction() {
