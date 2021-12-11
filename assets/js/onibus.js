@@ -1,9 +1,11 @@
+
+function carregarOnibus(){
 //Atualiza a página de 1 em 1 minuto
  setTimeout(function() {
      window.location.reload(1);
    }, 60000);
 
-function carregarOnibus(){
+
 let idaCongonhal = document.getElementById('idaCongonhal');
 let idaPousoAlegre = document.getElementById('idaPousoAlegre');
 
