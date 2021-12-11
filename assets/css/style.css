@@ -47,35 +47,6 @@ body{
     color: red;
 }
 
-#parent-div
-{
-  position:relative;
-
-}
-
-#child-div
-{
-  color:white;
-  position:relative;
-  top:1000px;
-  width:300px;
-  display:none;
-  text-align:center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
