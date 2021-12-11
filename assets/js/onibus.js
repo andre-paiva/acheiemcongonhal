@@ -1,6 +1,3 @@
-
-
-
 //Atualiza a página de 1 em 1 minuto
  setTimeout(function() {
      window.location.reload(1);
@@ -23,7 +20,7 @@ let horario = `${horas}:${minutos}`
 
 
 
-if(diaDaSemana == 'seguna-feira' || diaDaSemana == 'terça-feira' || diaDaSemana == 'quarta-feira' || diaDaSemana == 'quinta-feira' || diaDaSemana == 'sexta-feira'){
+if(diaDaSemana !== 'sábado' && diaDaSemana !== 'domingo'){
 
 let umDoDia           = horario < '04:40'
 let doisDoDia         = horario < '05:50'   &&  horario > '04:40'  
