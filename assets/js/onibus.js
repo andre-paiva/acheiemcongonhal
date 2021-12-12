@@ -1,13 +1,13 @@
 
-function carregarOnibus(){
+
 //Atualiza a página de 1 em 1 minuto
  setTimeout(function() {
      window.location.reload(1);
    }, 60000);
 
 
-let idaCongonhal = document.getElementById('idaCongonhal');
-let idaPousoAlegre = document.getElementById('idaPousoAlegre');
+let idaCongonhal = document.getElementById('idaCongonhal')
+let idaPousoAlegre = document.getElementById('idaPousoAlegre')
 
 const option = { weekday: 'long'};
 const locale = 'pt-br';
@@ -18,130 +18,129 @@ let horas = ('0'+ date.getHours()).slice(-2);
 let minutos =('0'+ date.getMinutes()).slice(-2);
 let horario = `${horas}:${minutos}`;
 
+
 // //LOGICA DE HORARIOS SEGUNDA A DOMINGO
 
+//DE CONGONHAL PARA POUSO ALEGRE
+    if(diaDaSemana !== 'sábado' && diaDaSemana !== 'domingo'){
+
+    let umDoDia           = horario < '04:40';
+    let doisDoDia         = horario < '05:50'   &&  horario > '04:40'  ;
+    let tresDoDia         = horario < '06:00'    &&  horario > '05:50' ;
+    let quatroDoDia       = horario < '06:30'   &&  horario > '06:00'  ;
+    let cincoDoDia        = horario < '07:00'    &&  horario > '06:30' ;
+    let seisDoDia         = horario < '07:15'   &&  horario > '07:00'  ;
+    let seteDoDia         = horario < '07:30'   &&  horario > '07:15'  ;
+    let oitoDoDia         = horario < '08:00'    &&  horario > '07:30' ;
+    let noveDoDia         = horario < '08:50'   &&  horario > '08:00'  ;
+    let dezDoDia          = horario < '09:30'   &&  horario > '08:50' ;
+    let onzeDoDia         = horario < '11:15'   &&  horario > '09:30'  ;
+    let dozeDoDia         =  horario < '12:00'   &&  horario > '11:15' ;
+    let trezeDoDia        =  horario < '13:00'   &&  horario > '12:00' ;
+    let quatorzeDoDia     =  horario < '14:00'   &&  horario > '13:00' ;
+    let quinzeDoDia       =  horario < '14:50'  &&  horario > '14:00'  ;
+    let dezesseisDoDia    =  horario < '15:15'  &&  horario > '14:50' ;
+    let dezesseteDoDia    =  horario < '15:40'  &&  horario > '15:15' ;
+    let dezoitoDoDia      =  horario < '16:30'  &&  horario > '15:40' ;
+    let dezenoveDoDia     =  horario < '17:00'   &&  horario > '16:30' ;
+    let vinteDoDia        =  horario < '17:20'  &&  horario > '17:00'  ;
+    let vinteUmDoDia      =  horario < '18:15'  &&  horario > '17:20' ;
+    let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15';
 
 
 
-if(diaDaSemana !== 'sábado' && diaDaSemana !== 'domingo'){
+        if (umDoDia)  idaPousoAlegre.innerHTML = '04:40'  ;//segunda a sabado
+        if (doisDoDia)  idaPousoAlegre.innerHTML = '05:50' ;// segunda a sexta
+        if (tresDoDia)  idaPousoAlegre.innerHTML = '06:00' ;// segunda a domingo
+        if (quatroDoDia)  idaPousoAlegre.innerHTML = '06:30' ;// segunda a sabado
+        if (cincoDoDia)  idaPousoAlegre.innerHTML = '07:00' ;//segunda a sexta
+        if (seisDoDia)  idaPousoAlegre.innerHTML = '07:15' ;//segunda a sabado
+        if (seteDoDia)  idaPousoAlegre.innerHTML = '07:30' ;//segunda a sexta
+        if (oitoDoDia)  idaPousoAlegre.innerHTML = '08:00' ;//segunda a domingo
+        if (noveDoDia)  idaPousoAlegre.innerHTML = '08:50' ;//segunda a sabado
+        if (dezDoDia)  idaPousoAlegre.innerHTML = '09:30' ;//segunda a domingo
+        if (onzeDoDia)  idaPousoAlegre.innerHTML = '11:15' ;//segunda a sabado
+        if (dozeDoDia)  idaPousoAlegre.innerHTML = '12:00' ;// segunda a sabado
+        if (trezeDoDia)  idaPousoAlegre.innerHTML = '13:00' ;//segunda a domingo
+        if (quatorzeDoDia)  idaPousoAlegre.innerHTML = '14:00' ;//segunda a sabado
+        if (quinzeDoDia)  idaPousoAlegre.innerHTML = '14:50' ;// segunda a domingo
+        if (dezesseisDoDia)  idaPousoAlegre.innerHTML = '15:15' ;//segunda a sexta
+        if (dezesseteDoDia)  idaPousoAlegre.innerHTML = '15:40' ;//segunda a sabado
+        if (dezoitoDoDia)  idaPousoAlegre.innerHTML = '16:30' ;// segunda a domingo
+        if (dezenoveDoDia)  idaPousoAlegre.innerHTML = '17:00' ;// segunda a sexta
+        if (vinteDoDia)  idaPousoAlegre.innerHTML = '17:20' ;// segunda a sabado
+        if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15' ;// segunda a domingo
+        if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00' ;//segunda a domingo
+        if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small>';//segunda a domingo
 
-let umDoDia           = horario < '04:40';
-let doisDoDia         = horario < '05:50'   &&  horario > '04:40'  ;
-let tresDoDia         = horario < '06:00'    &&  horario > '05:50' ;
-let quatroDoDia       = horario < '06:30'   &&  horario > '06:00'  ;
-let cincoDoDia        = horario < '07:00'    &&  horario > '06:30' ;
-let seisDoDia         = horario < '07:15'   &&  horario > '07:00'  ;
-let seteDoDia         = horario < '07:30'   &&  horario > '07:15'  ;
-let oitoDoDia         = horario < '08:00'    &&  horario > '07:30' ;
-let noveDoDia         = horario < '08:50'   &&  horario > '08:00'  ;
-let dezDoDia          = horario < '09:30'   &&  horario > '08:50' ;
-let onzeDoDia         = horario < '11:15'   &&  horario > '09:30'  ;
-let dozeDoDia         =  horario < '12:00'   &&  horario > '11:15' ;
-let trezeDoDia        =  horario < '13:00'   &&  horario > '12:00' ;
-let quatorzeDoDia     =  horario < '14:00'   &&  horario > '13:00' ;
-let quinzeDoDia       =  horario < '14:50'  &&  horario > '14:00'  ;
-let dezesseisDoDia    =  horario < '15:15'  &&  horario > '14:50' ;
-let dezesseteDoDia    =  horario < '15:40'  &&  horario > '15:15' ;
-let dezoitoDoDia      =  horario < '16:30'  &&  horario > '15:40' ;
-let dezenoveDoDia     =  horario < '17:00'   &&  horario > '16:30' ;
-let vinteDoDia        =  horario < '17:20'  &&  horario > '17:00'  ;
-let vinteUmDoDia      =  horario < '18:15'  &&  horario > '17:20' ;
-let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15';
+    } else if(diaDaSemana == 'sábado'){
 
-
-
-    if (umDoDia)  idaPousoAlegre.innerHTML = '04:40'  ;//segunda a sabado
-    if (doisDoDia)  idaPousoAlegre.innerHTML = '05:50' ;// segunda a sexta
-    if (tresDoDia)  idaPousoAlegre.innerHTML = '06:00' ;// segunda a domingo
-    if (quatroDoDia)  idaPousoAlegre.innerHTML = '06:30' ;// segunda a sabado
-    if (cincoDoDia)  idaPousoAlegre.innerHTML = '07:00' ;//segunda a sexta
-    if (seisDoDia)  idaPousoAlegre.innerHTML = '07:15' ;//segunda a sabado
-    if (seteDoDia)  idaPousoAlegre.innerHTML = '07:30' ;//segunda a sexta
-    if (oitoDoDia)  idaPousoAlegre.innerHTML = '08:00' ;//segunda a domingo
-    if (noveDoDia)  idaPousoAlegre.innerHTML = '08:50' ;//segunda a sabado
-    if (dezDoDia)  idaPousoAlegre.innerHTML = '09:30' ;//segunda a domingo
-    if (onzeDoDia)  idaPousoAlegre.innerHTML = '11:15' ;//segunda a sabado
-    if (dozeDoDia)  idaPousoAlegre.innerHTML = '12:00' ;// segunda a sabado
-    if (trezeDoDia)  idaPousoAlegre.innerHTML = '13:00' ;//segunda a domingo
-    if (quatorzeDoDia)  idaPousoAlegre.innerHTML = '14:00' ;//segunda a sabado
-    if (quinzeDoDia)  idaPousoAlegre.innerHTML = '14:50' ;// segunda a domingo
-    if (dezesseisDoDia)  idaPousoAlegre.innerHTML = '15:15' ;//segunda a sexta
-    if (dezesseteDoDia)  idaPousoAlegre.innerHTML = '15:40' ;//segunda a sabado
-    if (dezoitoDoDia)  idaPousoAlegre.innerHTML = '16:30' ;// segunda a domingo
-    if (dezenoveDoDia)  idaPousoAlegre.innerHTML = '17:00' ;// segunda a sexta
-    if (vinteDoDia)  idaPousoAlegre.innerHTML = '17:20' ;// segunda a sabado
-    if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15' ;// segunda a domingo
-    if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00' ;//segunda a domingo
-    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small>';//segunda a domingo
-
-} else if(diaDaSemana == 'sábado'){
-
-    let umDoSabado      =  horario < '04:40';
-    let doisDoSabado    =  horario < '06:00'   &&  horario > '04:40';
-    let tresDoSabado    =  horario < '06:30'   &&  horario > '06:00';
-    let quatroDoSabado    =  horario < '07:15'   &&  horario > '06:30';
-    let cincoDoSabado    =  horario < '08:00'   &&  horario > '07:15';
-    let seisDoSabado    =  horario < '08:50'   &&  horario > '08:00';
-    let seteDoSabado    =  horario < '09:30'   &&  horario > '08:50';
-    let oitoDoSabado    =  horario < '11:15'   &&  horario > '09:30';
-    let noveDoSabado    =  horario < '12:00'   &&  horario > '11:15';
-    let dezDoSabado    =  horario < '13:00'   &&  horario > '12:00';
-    let onzeDoSabado    =  horario < '14:00'   &&  horario > '13:00';
-    let dozeDoSabado    =  horario < '14:50'   &&  horario > '14:00';
-    let trezeDoSabado    =  horario < '15:40'   &&  horario > '14:00';
-    let quatorzeDoSabado    =  horario < '16:30'   &&  horario > '14:50';
-    let quinzeDoSabado    =  horario < '17:20'   &&  horario > '16:30';
-    let dezesseisDoSabado    =  horario < '18:15'   &&  horario > '17:20';
-    let dezesseteDoSabado    =  horario < '20:00'   &&  horario > '18:15';
-    
-    if (umDoSabado)  idaPousoAlegre.innerHTML = '04:40' ;//segunda a sabado
-    if (doisDoSabado)  idaPousoAlegre.innerHTML = '06:00';// segunda a domingo
-    if (tresDoSabado)  idaPousoAlegre.innerHTML = '06:30';// segunda a sabado
-    if (quatroDoSabado)  idaPousoAlegre.innerHTML = '07:15';//segunda a sabado
-    if (cincoDoSabado)  idaPousoAlegre.innerHTML = '08:00';//segunda a domingo
-    if (seisDoSabado)  idaPousoAlegre.innerHTML = '08:50';//segunda a sabado
-    if (seteDoSabado)  idaPousoAlegre.innerHTML = '09:30';//segunda a domingo
-    if (oitoDoSabado)  idaPousoAlegre.innerHTML = '11:15';//segunda a sabado
-    if (noveDoSabado)  idaPousoAlegre.innerHTML = '12:00';// segunda a sabado
-    if (dezDoSabado)  idaPousoAlegre.innerHTML = '13:00';//segunda a domingo
-    if (onzeDoSabado)  idaPousoAlegre.innerHTML = '14:00';//segunda a sabado
-    if (dozeDoSabado)  idaPousoAlegre.innerHTML = '14:50';// segunda a domingo
-    if (trezeDoSabado)  idaPousoAlegre.innerHTML = '15:40';//segunda a sabado
-    if (quatorzeDoSabado)  idaPousoAlegre.innerHTML = '16:30';// segunda a domingo
-    if (quinzeDoSabado)  idaPousoAlegre.innerHTML = '17:20';// segunda a sabado
-    if (dezesseisDoSabado)  idaPousoAlegre.innerHTML = '18:15';// segunda a domingo
-    if (dezesseteDoSabado)  idaPousoAlegre.innerHTML = '20:00';//segunda a domingo
-    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small>';
-
-} else if(diaDaSemana == 'domingo'){
-    let umDomingo =     horario < '06:00';
-    let doisDomingo =   horario < '08:00'   &&  horario > '06:00';
-    let tresDomingo =   horario < '09:30'   &&  horario > '08:00';
-    let quatroDomingo = horario < '13:00'   &&  horario > '09:30';
-    let cincoDomingo =  horario < '14:50'   &&  horario > '13:00';
-    let seisDomingo =   horario < '16:30'   &&  horario > '14:50';
-    let seteDomingo =   horario < '18:15'   &&  horario > '16:30';
-    let oitoDomingo =   horario < '20:00'   &&  horario > '18:15';
+        let umDoSabado      =  horario < '04:40';
+        let doisDoSabado    =  horario < '06:00'   &&  horario > '04:40';
+        let tresDoSabado    =  horario < '06:30'   &&  horario > '06:00';
+        let quatroDoSabado    =  horario < '07:15'   &&  horario > '06:30';
+        let cincoDoSabado    =  horario < '08:00'   &&  horario > '07:15';
+        let seisDoSabado    =  horario < '08:50'   &&  horario > '08:00';
+        let seteDoSabado    =  horario < '09:30'   &&  horario > '08:50';
+        let oitoDoSabado    =  horario < '11:15'   &&  horario > '09:30';
+        let noveDoSabado    =  horario < '12:00'   &&  horario > '11:15';
+        let dezDoSabado    =  horario < '13:00'   &&  horario > '12:00';
+        let onzeDoSabado    =  horario < '14:00'   &&  horario > '13:00';
+        let dozeDoSabado    =  horario < '14:50'   &&  horario > '14:00';
+        let trezeDoSabado    =  horario < '15:40'   &&  horario > '14:00';
+        let quatorzeDoSabado    =  horario < '16:30'   &&  horario > '14:50';
+        let quinzeDoSabado    =  horario < '17:20'   &&  horario > '16:30';
+        let dezesseisDoSabado    =  horario < '18:15'   &&  horario > '17:20';
+        let dezesseteDoSabado    =  horario < '20:00'   &&  horario > '18:15';
+        let fimDeSabado = horario > '20:00' &&  horario < '23:59';
+        
+        if (umDoSabado)  idaPousoAlegre.innerHTML = '04:40' ;//segunda a sabado
+        if (doisDoSabado)  idaPousoAlegre.innerHTML = '06:00';// segunda a domingo
+        if (tresDoSabado)  idaPousoAlegre.innerHTML = '06:30';// segunda a sabado
+        if (quatroDoSabado)  idaPousoAlegre.innerHTML = '07:15';//segunda a sabado
+        if (cincoDoSabado)  idaPousoAlegre.innerHTML = '08:00';//segunda a domingo
+        if (seisDoSabado)  idaPousoAlegre.innerHTML = '08:50';//segunda a sabado
+        if (seteDoSabado)  idaPousoAlegre.innerHTML = '09:30';//segunda a domingo
+        if (oitoDoSabado)  idaPousoAlegre.innerHTML = '11:15';//segunda a sabado
+        if (noveDoSabado)  idaPousoAlegre.innerHTML = '12:00';// segunda a sabado
+        if (dezDoSabado)  idaPousoAlegre.innerHTML = '13:00';//segunda a domingo
+        if (onzeDoSabado)  idaPousoAlegre.innerHTML = '14:00';//segunda a sabado
+        if (dozeDoSabado)  idaPousoAlegre.innerHTML = '14:50';// segunda a domingo
+        if (trezeDoSabado)  idaPousoAlegre.innerHTML = '15:40';//segunda a sabado
+        if (quatorzeDoSabado)  idaPousoAlegre.innerHTML = '16:30';// segunda a domingo
+        if (quinzeDoSabado)  idaPousoAlegre.innerHTML = '17:20';// segunda a sabado
+        if (dezesseisDoSabado)  idaPousoAlegre.innerHTML = '18:15';// segunda a domingo
+        if (dezesseteDoSabado)  idaPousoAlegre.innerHTML = '20:00';//segunda a domingo
+        if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small>';
 
 
-    if (umDomingo)  idaPousoAlegre.innerHTML = '06:00' ;// segunda a domingo
-    if (doisDomingo)  idaPousoAlegre.innerHTML = '08:00' ;//segunda a domingo
-    if (tresDomingo)  idaPousoAlegre.innerHTML = '09:30' ;//segunda a domingo
-    if (quatroDomingo)  idaPousoAlegre.innerHTML = '13:00' ;//segunda a domingo
-    if (cincoDomingo)  idaPousoAlegre.innerHTML = '14:50' ;// segunda a domingo
-    if (seisDomingo)  idaPousoAlegre.innerHTML = '16:30' ;// segunda a domingo
-    if (seteDomingo)  idaPousoAlegre.innerHTML = '18:15' ;// segunda a domingo
-    if (oitoDomingo)  idaPousoAlegre.innerHTML = '20:00' ;//segunda a domingo
-    if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small>';
-} else{
+    } else if(diaDaSemana == 'domingo'){
+        let umDomingo =     horario < '06:00';
+        let doisDomingo =   horario < '08:00'   &&  horario > '06:00';
+        let tresDomingo =   horario < '09:30'   &&  horario > '08:00';
+        let quatroDomingo = horario < '13:00'   &&  horario > '09:30';
+        let cincoDomingo =  horario < '14:50'   &&  horario > '13:00';
+        let seisDomingo =   horario < '16:30'   &&  horario > '14:50';
+        let seteDomingo =   horario < '18:15'   &&  horario > '16:30';
+        let oitoDomingo =   horario < '20:00'   &&  horario > '18:15';
+
+
+        if (umDomingo)  idaPousoAlegre.innerHTML = '06:00' ;// segunda a domingo
+        if (doisDomingo)  idaPousoAlegre.innerHTML = '08:00' ;//segunda a domingo
+        if (tresDomingo)  idaPousoAlegre.innerHTML = '09:30' ;//segunda a domingo
+        if (quatroDomingo)  idaPousoAlegre.innerHTML = '13:00' ;//segunda a domingo
+        if (cincoDomingo)  idaPousoAlegre.innerHTML = '14:50' ;// segunda a domingo
+        if (seisDomingo)  idaPousoAlegre.innerHTML = '16:30' ;// segunda a domingo
+        if (seteDomingo)  idaPousoAlegre.innerHTML = '18:15' ;// segunda a domingo
+        if (oitoDomingo)  idaPousoAlegre.innerHTML = '20:00' ;//segunda a domingo
+        if (horario > '20:00') idaPousoAlegre.innerHTML = '<small>Fim de circulação</small>';
+    } else{
     idaPousoAlegre.innerHTML = 'Indisponível';
 }
 
 
-
-
-
-    if(diaDaSemana == 'seguna-feira' || diaDaSemana == 'terça-feira' || diaDaSemana == 'quarta-feira' || diaDaSemana == 'quinta-feira' || diaDaSemana == 'sexta-feira'){
+//DE POUSO ALEGRE PARA CONGONHAL
+    if(diaDaSemana !== 'sábado' && diaDaSemana !== 'domingo'){
     
     let umDoDiaPA           = horario < '05:15';
     let doisDoDiaPA         = horario < '06:30'   &&  horario > '05:15'  ;
@@ -250,101 +249,11 @@ let vinteDoisDoDia    =  horario < '20:00'   &&  horario > '18:15';
         if (seisDomingoPA)  idaCongonhal.innerHTML = '17:30';// segunda a domingoPA
         if (seteDomingoPA)  idaCongonhal.innerHTML = '19:15';// segunda a domingoPA
         if (oitoDomingoPA)  idaCongonhal.innerHTML = '21:30';//segunda a domingo
-        if (horario > '21:30') idaCongonhal.innerHTML = '<small>Fim de circulação</small>'
+        if (horario > '21:30') idaCongonhal.innerHTML = '<small>Fim de circulação</small>';
     } else{
-        idaCongonhal.innerHTML = 'Indisponível'
+        idaCongonhal.innerHTML = 'Indisponível';
     }
 
-
-
-
-// //HORARIO DE SEGUNDA A SEXTA
-// if(segASex){
-//     if (umDoDia)  idaPousoAlegre.innerHTML = '04:40' //segunda a sabado
-//     if (doisDoDia)  idaPousoAlegre.innerHTML = '05:50'// segunda a sexta
-//     if (tresDoDia)  idaPousoAlegre.innerHTML = '06:00'// segunda a domingo
-//     if (quatroDoDia)  idaPousoAlegre.innerHTML = '06:30'// segunda a sabado
-//     if (cincoDoDia)  idaPousoAlegre.innerHTML = '07:00'//segunda a sexta
-//     if (seisDoDia)  idaPousoAlegre.innerHTML = '07:15'//segunda a sabado
-//     if (seteDoDia)  idaPousoAlegre.innerHTML = '07:30'//segunda a sexta
-//     if (oitoDoDia)  idaPousoAlegre.innerHTML = '08:00'//segunda a domingo
-//     if (noveDoDia)  idaPousoAlegre.innerHTML = '08:50'//segunda a sabado
-//     if (dezDoDia)  idaPousoAlegre.innerHTML = '09:30'//segunda a domingo
-//     if (onzeDoDia)  idaPousoAlegre.innerHTML = '11:15'//segunda a sabado
-//     if (dozeDoDia)  idaPousoAlegre.innerHTML = '12:00'// segunda a sabado
-//     if (trezeDoDia)  idaPousoAlegre.innerHTML = '13:00'//segunda a domingo
-//     if (quatorzeDoDia)  idaPousoAlegre.innerHTML = '14:00'//segunda a sabado
-//     if (quinzeDoDia)  idaPousoAlegre.innerHTML = '14:50'// segunda a domingo
-//     if (dezesseisDoDia)  idaPousoAlegre.innerHTML = '15:15'//segunda a sexta
-//     if (dezesseteDoDia)  idaPousoAlegre.innerHTML = '15:40'//segunda a sabado
-//     if (dezoitoDoDia)  idaPousoAlegre.innerHTML = '16:30'// segunda a domingo
-//     if (dezenoveDoDia)  idaPousoAlegre.innerHTML = '17:00'// segunda a sexta
-//     if (vinteDoDia)  idaPousoAlegre.innerHTML = '17:20'// segunda a sabado
-//     if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
-//     if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
     
-//    }
-
-//     if(diaDaSemana == 'sábado'){
-//     if (umDoDia)  idaPousoAlegre.innerHTML = '04:40' //segunda a sabado
-//     if (tresDoDia)  idaPousoAlegre.innerHTML = '06:00'// segunda a domingo
-//     if (quatroDoDia)  idaPousoAlegre.innerHTML = '06:30'// segunda a sabado
-//     if (seisDoDia)  idaPousoAlegre.innerHTML = '07:15'//segunda a sabado
-//     if (oitoDoDia)  idaPousoAlegre.innerHTML = '08:00'//segunda a domingo
-//     if (noveDoDia)  idaPousoAlegre.innerHTML = '08:50'//segunda a sabado
-//     if (dezDoDia)  idaPousoAlegre.innerHTML = '09:30'//segunda a domingo
-//     if (onzeDoDia)  idaPousoAlegre.innerHTML = '11:15'//segunda a sabado
-//     if (dozeDoDia)  idaPousoAlegre.innerHTML = '12:00'// segunda a sabado
-//     if (trezeDoDia)  idaPousoAlegre.innerHTML = '13:00'//segunda a domingo
-//     if (quatorzeDoDia)  idaPousoAlegre.innerHTML = '14:00'//segunda a sabado
-//     if (quinzeDoDia)  idaPousoAlegre.innerHTML = '14:50'// segunda a domingo
-//     if (dezesseteDoDia)  idaPousoAlegre.innerHTML = '15:40'//segunda a sabado
-//     if (dezoitoDoDia)  idaPousoAlegre.innerHTML = '16:30'// segunda a domingo
-//     if (vinteDoDia)  idaPousoAlegre.innerHTML = '17:20'// segunda a sabado
-//     if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
-//     if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
-
-//    }
-
-//     if(diaDaSemana == 'domingo'){
-//     if (tresDoDia)  idaPousoAlegre.innerHTML = '06:00'// segunda a domingo
-//     if (oitoDoDia)  idaPousoAlegre.innerHTML = '08:00'//segunda a domingo
-//     if (dezDoDia)  idaPousoAlegre.innerHTML = '09:30'//segunda a domingo
-//     if (trezeDoDia)  idaPousoAlegre.innerHTML = '13:00'//segunda a domingo
-//     if (quinzeDoDia)  idaPousoAlegre.innerHTML = '14:50'// segunda a domingo
-//     if (dezoitoDoDia)  idaPousoAlegre.innerHTML = '16:30'// segunda a domingo
-//     if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
-//     if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
-//    }
-
-
-    // if (umDoDia)  idaPousoAlegre.innerHTML = '04:40' //segunda a sabado
-    // if (doisDoDia)  idaPousoAlegre.innerHTML = '05:50'// segunda a sexta
-    // if (tresDoDia)  idaPousoAlegre.innerHTML = '06:00'// segunda a domingo
-    // if (quatroDoDia)  idaPousoAlegre.innerHTML = '06:30'// segunda a sabado
-    // if (cincoDoDia)  idaPousoAlegre.innerHTML = '07:00'//segunda a sexta
-    // if (seisDoDia)  idaPousoAlegre.innerHTML = '07:15'//segunda a sabado
-    // if (seteDoDia)  idaPousoAlegre.innerHTML = '07:30'//segunda a sexta
-    // if (oitoDoDia)  idaPousoAlegre.innerHTML = '08:00'//segunda a domingo
-    // if (noveDoDia)  idaPousoAlegre.innerHTML = '08:50'//segunda a sabado
-    // if (dezDoDia)  idaPousoAlegre.innerHTML = '09:30'//segunda a domingo
-    // if (onzeDoDia)  idaPousoAlegre.innerHTML = '11:15'//segunda a sabado
-    // if (dozeDoDia)  idaPousoAlegre.innerHTML = '12:00'// segunda a sabado
-    // if (trezeDoDia)  idaPousoAlegre.innerHTML = '13:00'//segunda a domingo
-    // if (quatorzeDoDia)  idaPousoAlegre.innerHTML = '14:00'//segunda a sabado
-    // if (quinzeDoDia)  idaPousoAlegre.innerHTML = '14:50'// segunda a domingo
-    // if (dezesseisDoDia)  idaPousoAlegre.innerHTML = '15:15'//segunda a sexta
-    // if (dezesseteDoDia)  idaPousoAlegre.innerHTML = '15:40'//segunda a sabado
-    // if (dezoitoDoDia)  idaPousoAlegre.innerHTML = '16:30'// segunda a domingo
-    // if (dezenoveDoDia)  idaPousoAlegre.innerHTML = '17:00'// segunda a sexta
-    // if (vinteDoDia)  idaPousoAlegre.innerHTML = '17:20'// segunda a sabado
-    // if (vinteUmDoDia)  idaPousoAlegre.innerHTML = '18:15'// segunda a domingo
-    // if (vinteDoisDoDia)  idaPousoAlegre.innerHTML = '20:00'//segunda a domingo
-
-
-// idaPousoAlegre.innerHTML = diaDaSemana
-
-
-}
 
 
