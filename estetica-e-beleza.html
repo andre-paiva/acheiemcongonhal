@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+    <style>
+        
+#link-topo{
+    margin-right:5px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 2;
+    font-size: 1.7rem;
+    color: red;
+}
+    </style>
+    
+
+
+    <title>Achei em Congonhal!</title>
+   
+  </head>
+  <body onload="carregar()">
+    
+
+    <header>
+      <nav class="navbar p-0 navbar-dark bg-success mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="fas fa-map-marked me-2"></i><b>achei em congonhal</b></a>            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse m-4">
+              <hr>
+              <div class="d-flex flex-column flex-wrap justify-content-center"> <!-- linha 1 -->
+                <a class="btn btn-warning text-white" href="guia.html">Guia da Cidade</a>
+                <a class="btn btn-info  my-1 text-white" href="telefones-uteis.html">Telefones Úteis</a>
+                <a class="btn btn-secondary text-white" href="horario-onibus.html">Horário de Ônibus</a>
+                <a class="btn btn-light my-1 text-success" href="drogaria-plantao.html">Drogaria de Plantão</a>
+                <a class="btn btn-danger text-white" href="telefone-policia.html">Telefone da Polícia</a>
+              </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="d-flex flex-wrap justify-content-center mt-2">
+        <div class="bg-img">
+            <section class="mt-2" >
+        
+                <div class="d-flex flex-column justify-content-center align-self-center text-center">
+                    <div>
+                        <img style="width: 100px;" class="img-fluid" src="assets/images/estetica-guia.svg" alt="">
+                        <h1 class="p-0 m-0 txt-congonhal display-1">Estética e Beleza</h1>
+                    </div>
+                        <p  class="mb-3">Cuide bem de você!</p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <section class="container bg-light">
+                <div>
+                    <ul class="list-group">
+          
+                        <li class="list-group-item ">
+                            <a href="#1" class="d-flex align-items-center justify-content-center  text-white stretched-link btn btn-danger">
+                               <p> Salão de Beleza</p>
+                            </a>
+                                
+                        </li>
+                        
+                        <li class="list-group-item ">
+                            <a href="#2" class="d-flex align-items-center justify-content-center  text-white stretched-link btn btn-danger">
+                               <p> Manicures</p>
+                            </a>
+                                
+                        </li>
+                        
+                        <li class="list-group-item ">
+                            <a href="#3" class="d-flex align-items-center justify-content-center  text-white stretched-link btn btn-danger">
+                               <p> Tratamentos Estéticos</p>
+                            </a>
+                                
+                        </li>
+                        <li class="list-group-item ">
+                            <a href="#4" class="d-flex align-items-center justify-content-center  text-white stretched-link btn btn-danger">
+                               <p> Depilação e Sobrancelhas</p>
+                            </a>
+                                
+                        </li>
+                        <li class="list-group-item ">
+                            <a href="#5" class="d-flex align-items-center justify-content-center  text-white stretched-link btn btn-danger">
+                               <p> Maquiadoras</p>
+                            </a>
+                                
+                        </li>
+
+                    </ul>
+                </div>
+        </section>
+
+                    <a id="link-topo" href="#"><i class="fas fa-arrow-alt-circle-up"></i></a> 
+
+        <nav class="bg-light p-2 ">
+
+            <div class="d-flex justify-content-between m-2">
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="estetica-e-beleza.html" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Voltar ao guia</h6>
+                        </a>
+                </div>
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="index.html" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Página inicial</h6>
+                        </a>
+                </div>
+            </div>
+        </nav>
+      
+      <section class="container"> <!-- SECAO DE MEDICOS -->
+          <div class="text-center" id="1">
+                  <h3 class="mx-3 mt-2">Salão de Beleza</h3>
+          </div>
+
+          <ul class="list-group mt-1">
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                <a href="estetica-e-beleza/tamiris-mello.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p> Tamiris Mello</p>
+                </a>
+                    
+            </li>
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                <a href="estetica-e-beleza/kelly-guilhermini.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p> Kelly Guilhermini</p>
+                </a>
+                    
+            </li>
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                <a href="estetica-e-beleza/ninos.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p> Nino's</p>
+                </a>
+                    
+            </li>
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                <a href="estetica-e-beleza/jos.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p> Jo's</p>
+                </a>
+                    
+            </li>
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                <a href="estetica-e-beleza/lais-coutinho.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p> Laís Coutinho</p>
+                </a>
+                    
+            </li>
+          
+            <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+                <a href="estetica-e-beleza/vanessa-emanuelly.html" class="d-flex text-decoration-none text-black stretched-link">
+                    <p> Vanessa Emanuelly</p>
+                </a>
+                    
+            </li>
+
+        </ul>
+    </section>
+
+        <section class="container"> <!-- SECAO DE MEDICOS -->
+            <div class="text-center" id="2">
+                    <h3 class="mx-3 mt-2" >Manicures</h3>
+            </div>
+
+        <ul class="list-group mt-1">
+                
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/aline-ribeiro.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Aline Ribeiro</p>
+            </a>
+                
+        </li>
+                
+               
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/wilitney-bruna.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Wiltiney Bruna</p>
+            </a>
+                
+        </li>
+                
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/suely-couto.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Suély Couto</p>
+            </a>
+                
+        </li>
+                
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/juliana-santos.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Juliana Santos</p>
+            </a>
+                
+        </li>
+                
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/juliana-souza.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Juliana Souza</p>
+            </a>
+                
+        </li>
+                
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/jady-gomes.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Jady Gomes</p>
+            </a>
+                
+        </li>
+                
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/reviane-monique.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Reviane Monique</p>
+            </a>
+                
+        </li>
+                
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/lidi-xavier.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Lidi Xavier</p>
+            </a>
+                
+        </li>
+
+
+        </ul>
+        </section>
+
+
+        <section class="container"> <!-- SECAO DE MEDICOS -->
+            <div class="text-center" id="3">
+                    <h3 class="mx-3 mt-2">Tratamentos Estéticos</h3>
+            </div>
+
+        <ul class="list-group mt-1">
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/bruna-alvarenga.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Bruna Alvarenga</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/leydyane-carvalho.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Leydyane Carvalho</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/izabella-resende.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Izabella Resende</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/karine-vilas-boas.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Karine Vilas Boas</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/edilaine-fraga.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Edilaine Fraga</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/ana-elisa.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Ana Elisa</p>
+            </a>
+                
+        </li>
+                          
+
+        </ul>
+        </section>
+
+
+        <section class="container"> <!-- SECAO DE MEDICOS -->
+            <div class="text-center" id="4">
+                    <h3 class="mx-3 mt-2">Depilação e Sobrancelhas</h3>
+            </div>
+
+        <ul class="list-group mt-1">
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/dorinha.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Dorinha Depiladora</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/edilaine-fraga.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Edilaine Fraga</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/salao-da-helena.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Salão da Helena</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/liliane-fenner.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Liliane Fenner</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/silmara-alves.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Silmara Alves</p>
+            </a>
+                
+        </li>        
+                          
+
+        </ul>
+        </section>
+
+        <section class="container"> <!-- SECAO DE MEDICOS -->
+            <div class="text-center" id="5">
+                    <h3 class="mx-3 mt-2">Maquiadoras</h3>
+            </div>
+
+        <ul class="list-group mt-1">
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/ineide.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Ineide</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/louise-anne.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Louise Anne</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/silmara-alves.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Silmara Alves</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/cecilia-guilhermina.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Cecilia Guilhermina</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/bruna-ribeiro.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Bruna Ribeiro</p>
+            </a>
+                
+        </li>        
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/tainara-oliveira.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Tainara Oliveira</p>
+            </a>
+                
+        </li>        
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/erika-reis.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Erika Reis</p>
+            </a>
+                
+        </li>        
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="estetica-e-beleza/laysa.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p>Laysa</p>
+            </a>
+                
+        </li>        
+                          
+
+        </ul>
+        </section>
+          
+           
+
+    </main>
+
+    <footer class="text-center align-center m-2">
+      <h6 class="lh-lg" style="font-size: .8rem; text-shadow: -2px 2px 3px rgba(0,0,0,0.25);">Coded by Andre Paiva</h6>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+        <!-- Optional JavaScript -->
+    <script>
+        function carregar(){
+window.addEventListener("scroll", ()=> {
+
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("link-topo").style.display = "block";
+    } else {
+        document.getElementById("link-topo").style.display = "none";
+}
+})
+}
+    </script>
+
+  </body>
+</html>

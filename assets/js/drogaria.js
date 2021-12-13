@@ -37,7 +37,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -68,7 +68,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -99,7 +99,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -130,7 +130,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -161,7 +161,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -192,7 +192,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -223,7 +223,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -254,7 +254,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -285,7 +285,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -316,7 +316,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -347,7 +347,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }
@@ -378,7 +378,7 @@ function carregar(){
 
         //DIAS SEM PLANTAO
         } else {
-            nomeDrogaria.innerHTML = '<h4> Nenhuma drogaria de plantão! </h4>'
+            nomeDrogaria.innerHTML = '<h4> Horário normal de funcionamento! </h4>'
             whatsapp.href = ''
             plantaoAte.innerHTML = ' '
         }

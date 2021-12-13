@@ -16,14 +16,13 @@
     <title>Achei em Congonhal!</title>
    
   </head>
-  <body>
+  <body onload="carregar()">
     
 
     <header>
       <nav class="navbar p-0 navbar-dark bg-success mb-3">
         <div class="container">
-            <a class="navbar-brand" href="/"><b>achei em congonhal</b></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          <a class="navbar-brand" href="/"><i class="fas fa-map-marked me-2"></i><b>achei em congonhal</b></a>            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target=".navbar-collapse">
                 <i class="fas fa-bars"></i>
             </button>
@@ -61,14 +60,14 @@
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center mt-3">
-                  <div class="card text-center">
+                  <div class="card text-center" style="width: 100%;">
                     <div class="card-header bg-danger text-white text-uppercase" id="dataAtual">
                       <!-- Terça-feira 00/00/00 -->
                     </div>
                     <div class="card-body">
                       
                       <div class="card-title" id="nomeDrogaria">
-
+                       
                       </div>
 
                       <p class="card-text" id="plantaoAte">Plantão até as 20h</p>
