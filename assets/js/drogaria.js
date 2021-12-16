@@ -5,6 +5,7 @@ function carregar(){
     let whatsapp = document.getElementById('whatsapp')
     let horaAtual = document.getElementById('horaAtual')
     let plantaoAte = document.getElementById('plantaoAte')
+    let endereco = document.getElementById('endereco')
 
     let data = new Date()
     dataAtual.innerHTML = data.toLocaleString('pt-Br', {dateStyle: 'full'})
@@ -357,9 +358,10 @@ function carregar(){
     //DEZEMBRO
     if(mesPlantao == 12){
         //AMERICANA
-        if(diaPlantao == 8 || diaPlantao == 10 || diaPlantao == 10 || diaPlantao == 10){
+        if(diaPlantao == 15 || diaPlantao == 10 || diaPlantao == 10 || diaPlantao == 10){
             nomeDrogaria.innerHTML = '<h4> AMERICANA </h4>'
             whatsapp.href = 'https://www.google.com/'
+            endereco.innerHTML='Rua Silviano Brandão 443'
 
         //INOVA
         } else if(diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9){
