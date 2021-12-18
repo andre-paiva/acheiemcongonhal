@@ -13,26 +13,27 @@ function carregar(){
     let mesPlantao = data.getMonth() + 1
 
 
+    //ATUALIZADO EM 18/12/2021
 
     //JANEIRO
     if(mesPlantao == 1){
         //AMERICANA
-        if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        if(diaPlantao == 23 || diaPlantao == 22){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //INOVA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 9 || diaPlantao == 8){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //OBEDIENCIA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 2 || diaPlantao == 30 || diaPlantao == 1 || diaPlantao == 29){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //STA TEREZINHA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 16 || diaPlantao == 15 ){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
@@ -48,22 +49,22 @@ function carregar(){
     //FEVEREIRO
     if(mesPlantao == 2){
         //AMERICANA
-        if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        if(diaPlantao == 19 || diaPlantao == 20){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //INOVA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 5 || diaPlantao == 6){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //OBEDIENCIA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 26 || diaPlantao == 27){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //STA TEREZINHA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 12 || diaPlantao == 13){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
@@ -79,22 +80,22 @@ function carregar(){
     //MARÇO
     if(mesPlantao == 3){
         //AMERICANA
-        if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        if(diaPlantao == 19 || diaPlantao == 20){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //INOVA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 5 || diaPlantao == 6){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //OBEDIENCIA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 26 || diaPlantao == 27){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //STA TEREZINHA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 12 || diaPlantao == 13){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
@@ -110,22 +111,22 @@ function carregar(){
     //ABRIL
     if(mesPlantao == 4){
         //AMERICANA
-        if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        if(diaPlantao == 16 || diaPlantao == 17){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //INOVA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 2 || diaPlantao == 3){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //OBEDIENCIA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 23 || diaPlantao == 24){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //STA TEREZINHA
-        } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
+        } else if(diaPlantao == 9 || diaPlantao == 10 || diaPlantao == 8 || diaPlantao == 8){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
@@ -137,6 +138,8 @@ function carregar(){
         }
 
     }
+
+    //DAQUI PRA BAIXO AINDA NÃO SAIU A LISTA
 
     //MAIO
     if(mesPlantao == 5){
