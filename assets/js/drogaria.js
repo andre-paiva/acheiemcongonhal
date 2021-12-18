@@ -6,11 +6,40 @@ function carregar(){
     let horaAtual = document.getElementById('horaAtual')
     let plantaoAte = document.getElementById('plantaoAte')
     let endereco = document.getElementById('endereco')
+    let telefone = document.getElementById('telefone')
 
     let data = new Date()
     dataAtual.innerHTML = data.toLocaleString('pt-Br', {dateStyle: 'full'})
     let diaPlantao = data.getDate()
     let mesPlantao = data.getMonth() + 1
+
+
+    function staTerezinha(){
+        nomeDrogaria.innerHTML = '<h4> DROGARIA STA TEREZINHA</h4>'
+        whatsapp.href = 'https://wa.me/5535998434544'
+        endereco.innerHTML=' Rua Silviano Brandao, 353'
+        telefone.innerHTML='(35) 3424 - 1492'
+    }
+    function americana(){
+        nomeDrogaria.innerHTML = '<h4> DROGARIA AMERICANA</h4>'
+        whatsapp.href = 'https://wa.me/5535998434544'
+        endereco.innerHTML='Rua Silviano Brandão, 443 '
+        telefone.innerHTML='(35) 3424 - 1851'
+    }
+    function inova(){
+        nomeDrogaria.innerHTML = '<h4> DROGARIA INOVA</h4>'
+        whatsapp.href = 'https://wa.me/5535997584502'
+        endereco.innerHTML='Praça Com. Ferreira de Matos, 334'
+        telefone.innerHTML='(35) 3424 - 2425'
+    }
+    function nsObediencia(){
+        nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA</h4>'
+        whatsapp.href = 'https://wa.me/5535999378338'
+        endereco.innerHTML='Rua Duque de Caxias, 244'
+        telefone.innerHTML='(35) 3424 - 1361'
+    }
+
+
 
 
     //ATUALIZADO EM 18/12/2021
@@ -19,8 +48,7 @@ function carregar(){
     if(mesPlantao == 1){
         //AMERICANA
         if(diaPlantao == 23 || diaPlantao == 22){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 9 || diaPlantao == 8){
@@ -50,8 +78,7 @@ function carregar(){
     if(mesPlantao == 2){
         //AMERICANA
         if(diaPlantao == 19 || diaPlantao == 20){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 5 || diaPlantao == 6){
@@ -81,8 +108,7 @@ function carregar(){
     if(mesPlantao == 3){
         //AMERICANA
         if(diaPlantao == 19 || diaPlantao == 20){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 5 || diaPlantao == 6){
@@ -112,8 +138,7 @@ function carregar(){
     if(mesPlantao == 4){
         //AMERICANA
         if(diaPlantao == 16 || diaPlantao == 17){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 2 || diaPlantao == 3){
@@ -145,8 +170,7 @@ function carregar(){
     if(mesPlantao == 5){
         //AMERICANA
         if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
@@ -176,8 +200,7 @@ function carregar(){
     if(mesPlantao == 6){
         //AMERICANA
         if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
@@ -207,8 +230,7 @@ function carregar(){
     if(mesPlantao == 7){
         //AMERICANA
         if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
@@ -238,8 +260,7 @@ function carregar(){
     if(mesPlantao == 8){
         //AMERICANA
         if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
@@ -269,8 +290,7 @@ function carregar(){
     if(mesPlantao == 9){
         //AMERICANA
         if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
@@ -300,8 +320,7 @@ function carregar(){
     if(mesPlantao == 10){
         //AMERICANA
         if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
@@ -331,8 +350,7 @@ function carregar(){
     if(mesPlantao == 11){
         //AMERICANA
         if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8 || diaPlantao == 8){
@@ -358,13 +376,14 @@ function carregar(){
 
     }
 
+
+
+
     //DEZEMBRO
     if(mesPlantao == 12){
         //AMERICANA
         if(diaPlantao == 26){
-            nomeDrogaria.innerHTML = '<h4> AMERICANA </h4>'
-            whatsapp.href = 'https://www.google.com/'
-            endereco.innerHTML='Rua Silviano Brandão 443'
+            americana()
 
         //INOVA
         } else if(diaPlantao == 5){
@@ -378,8 +397,7 @@ function carregar(){
 
         //STA TEREZINHA
         } else if(diaPlantao == 25 || diaPlantao == 19 || diaPlantao == 18){
-            nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
-            whatsapp.href = 'https://www.google.com/'
+            staTerezinha()
 
         //DIAS SEM PLANTAO
         } else {
