@@ -361,23 +361,23 @@ function carregar(){
     //DEZEMBRO
     if(mesPlantao == 12){
         //AMERICANA
-        if(diaPlantao == 15 || diaPlantao == 10 || diaPlantao == 10 || diaPlantao == 10){
+        if(diaPlantao == 26){
             nomeDrogaria.innerHTML = '<h4> AMERICANA </h4>'
             whatsapp.href = 'https://www.google.com/'
             endereco.innerHTML='Rua Silviano Brandão 443'
 
         //INOVA
-        } else if(diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9){
+        } else if(diaPlantao == 5){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //OBEDIENCIA
-        } else if(diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9){
+        } else if(diaPlantao == 6){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
         //STA TEREZINHA
-        } else if(diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9 || diaPlantao == 9){
+        } else if(diaPlantao == 25 || diaPlantao == 19 || diaPlantao == 18){
             nomeDrogaria.innerHTML = '<h4> DROGARIA N.S OBEDIÊNCIA </h4>'
             whatsapp.href = 'https://www.google.com/'
 
