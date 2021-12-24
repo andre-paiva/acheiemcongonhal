@@ -139,6 +139,8 @@ let horario = `${horas}:${minutos}`;
 }
 
 
+
+
 //DE POUSO ALEGRE PARA CONGONHAL
     if(diaDaSemana !== 'sábado' && diaDaSemana !== 'domingo'){
     
