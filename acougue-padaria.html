@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+    <style>
+        
+#link-topo{
+    margin-right:5px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 2;
+    font-size: 1.7rem;
+    color: red;
+}
+    </style>
+    
+
+
+    <title>Achei em Congonhal!</title>
+   
+  </head>
+  <body onload="carregar()">
+    
+
+    <header>
+      <nav class="navbar p-0 navbar-dark bg-success mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="fas fa-map-marked me-2"></i><b>achei em congonhal</b></a>            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse m-4">
+              <hr>
+              <div class="d-flex flex-column flex-wrap justify-content-center"> <!-- linha 1 -->
+                <a class="btn btn-warning text-white" href="guia">Guia da Cidade</a>
+                <a class="btn btn-info  my-1 text-white" href="telefones-uteis">Telefones Úteis</a>
+                <a class="btn btn-secondary text-white" href="horario-onibus">Horário de Ônibus</a>
+                <a class="btn btn-light my-1 text-success" href="drogaria-plantao">Drogaria de Plantão</a>
+                <a class="btn btn-danger text-white" href="telefone-policia">Telefone da Polícia</a>
+              </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="d-flex flex-wrap justify-content-center mt-2">
+        <div class="bg-img">
+            <section class="mt-2" >
+        
+                <div class="d-flex flex-column justify-content-center align-self-center text-center">
+                    <div>
+                        <img style="width: 100px;" class="img-fluid" src="assets/images/acougue-padaria-guia.svg" alt="">
+                        <h1 class="p-0 m-0 txt-congonhal display-1">Carnes e Pães</h1>
+                    </div>
+                        <p  class="mb-3">Encontre seu local preferido!</p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <nav class="bg-light p-2 ">
+
+            <div class="d-flex justify-content-between m-2">
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="guia" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Voltar ao guia</h6>
+                        </a>
+                </div>
+                <div class="d-flex align-items-center">
+                        <i class="fas fa-angle-double-left"></i>
+                        <a href="index" class="text-decoration-none text-black">
+                            <h6 class="mx-2">Página inicial</h6>
+                        </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- SETA BACK TO TOP -->
+        <a id="link-topo" href="#"><i class="fas fa-arrow-alt-circle-up"></i></a> 
+      
+      
+        <section class="container"> <!-- SECAO DE BARBEARIA -->
+
+            <div class="text-center">
+                <h3 class="mx-3 mt-2">Carnes</h3>
+            </div>
+
+        <ul class="list-group mt-3">
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/acougue-sao-jose" class="d-flex text-decoration-none text-black stretched-link">
+                <p>Açougue São José</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/casa-de-carnes-primavera" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Casa de Carnes Primavera</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/casa-de-carne-congonhal" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Casa de Carne Congonhal</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/peixaria-do-ze" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Peixaria do Zé</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/casa-de-carnes-nsobediencia" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Casa de Carnes N.S Obediência</p>
+            </a>
+                
+        </li>                            
+        
+                    
+    </ul>
+    </section>
+
+
+        <section class="container"> <!-- SECAO DE BARBEARIA -->
+
+            <div class="text-center">
+                <h3 class="mx-3 mt-2">Padarias</h3>
+            </div>
+
+        <ul class="list-group mt-3">
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-gepaes.html" class="d-flex text-decoration-none text-black stretched-link">
+                <p>Padaria Gê Pães</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-congonhal" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Padaria Congonhal</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-pao-de-ouro" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Padaria Pão de Ouro</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-cbc" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Padaria CBC</p>
+            </a>
+                
+        </li>
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-sao-rafael" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Padaria São Rafael</p>
+            </a>
+                
+        </li>                            
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-estacao-cafe" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Padaria Estação Café</p>
+            </a>
+                
+        </li>                            
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-santa-rita" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Padaria Santa Rita</p>
+            </a>
+                
+        </li>                            
+                             
+        <li class="list-group-item d-flex align-items-center justify-content-between"> <!-- RESTAURANTE -->
+            <a href="acougue-padarias/padaria-super-pao" class="d-flex text-decoration-none text-black stretched-link">
+                <p> Padaria Super Pão</p>
+            </a>
+                
+        </li>                            
+        
+                    
+    </ul>
+    </section>
+          
+           
+
+    </main>
+
+    <footer class="text-center align-center m-2">
+      <h6 class="lh-lg" style="font-size: .8rem; text-shadow: -2px 2px 3px rgba(0,0,0,0.25);">Coded by Andre Paiva</h6>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+        <!-- Optional JavaScript -->
+    <script>
+        function carregar(){
+window.addEventListener("scroll", ()=> {
+
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("link-topo").style.display = "block";
+    } else {
+        document.getElementById("link-topo").style.display = "none";
+}
+})
+}
+    </script>
+
+  </body>
+</html>
